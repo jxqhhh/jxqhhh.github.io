@@ -1,0 +1,27 @@
+#content {
+    margin-top: 60px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#content #photo {
+    box-sizing: content-box;
+    width: 400px;
+    vertical-align: bottom;
+    display: inline;
+
+}
+
+#content #intro{
+    display: inline-block;
+    margin-left: 60px;
+    vertical-align: top;
+}
+
+#content #intro > h1 {
+    font-size: 50px;
+}
+
+#content #intro > pre {
+    font-size: 15px;
+}
