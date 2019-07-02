@@ -1,14 +1,16 @@
 #articles > article {
-    margin: 20px;
+    width: 98%;
+    margin: 1%;
+    border-color: white;
     background-color: pink;
     height: 300px;
     line-height: 300px;
+    display: inline-block;
 }
 
 #articles > article > img.preview {
-    width: 500px;
+    max-height: 255px;
     box-sizing: content-box;
     vertical-align: middle;
-    line-height: 20%;
     margin-left: 40px;
 }
