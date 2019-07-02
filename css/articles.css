@@ -1,5 +1,14 @@
-#articles article {
+#articles > article {
     margin: 20px;
     background-color: pink;
     height: 300px;
+    line-height: 300px;
+}
+
+#articles > article > img.preview {
+    width: 500px;
+    box-sizing: content-box;
+    vertical-align: middle;
+    line-height: 20%;
+    margin-left: 40px;
 }
