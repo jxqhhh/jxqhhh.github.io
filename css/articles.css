@@ -1,16 +1,38 @@
-#articles > article {
+#articles > div.article {
     width: 98%;
     margin: 1%;
     border-color: white;
     background-color: pink;
-    height: 300px;
-    line-height: 300px;
-    display: inline-block;
+    height:40%;
 }
 
-#articles > article > img.preview {
-    max-height: 255px;
+#articles > div.article > img.preview {
+    max-width: 30%;
     box-sizing: content-box;
     vertical-align: middle;
-    margin-left: 40px;
+    margin-left: 4%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: inline;
+}
+
+#articles > div.article > div.text{
+    display: inline-block;
+    max-width: 50%;
+    vertical-align: middle;
+    margin-left: 6%;
+}
+
+#articles > div.article > div.text > h1.title {
+    margin-top: 0;
+    margin-bottom: 0;
+    max-height: 50%;
+    font-size: 20px;
+}
+
+#articles > div.article > div.text > p.abstract {
+    max-height: 50%;
+    word-break:normal;
+    white-space:pre-warp;
+    word-wrap:break-word;
 }
