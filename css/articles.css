@@ -1,6 +1,8 @@
 #articles > div.article {
     width: 98%;
-    margin: 1%;
+    padding: 1%;
+    background-clip: content-box;
+    margin: 0%;
     border-color: white;
     background-color: pink;
     height:40%;
