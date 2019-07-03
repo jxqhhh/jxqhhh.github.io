@@ -5,6 +5,8 @@
         <title>Site not found</title>
     </head>
     <body>
+
+        <!--导航栏-->
         <div id="nav">
             <ul class="navbar">
                 <li>
@@ -16,10 +18,11 @@
             </ul>
         </div>
         <link rel="stylesheet" href="../css/nav_style.css">
+
         <div id="content" style="width: 84%; margin: 8%;""></div>
         <script src="../node_modules/marked/marked.min.js"></script>
         <script>
-            var md = window.location.search.split("=")[1];
+            var md = window.location.search.split("=")[1];//解析URL
             var text;
             switch(md){
                 case "Webxiaoxueqi":
@@ -32,7 +35,8 @@
                     text="#### 该博客内容已被删除";
                     break;
             }
-            document.getElementById('content').innerHTML = marked(text);
+            document.getElementById('content').innerHTML = marked(text);//使用marked.js显示markdown
         </script>
+        
     </body>
 </html>
