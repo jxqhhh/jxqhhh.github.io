@@ -1,6 +1,13 @@
+#articles {
+    padding-bottom: 1%;
+}
+
 #articles > div.article {
     width: 98%;
-    padding: 1%;
+    padding-top: 1%;
+    padding-bottom: 0;
+    padding-left: 1%;
+    padding-right: 1%;
     background-clip: content-box;
     margin: 0%;
     border-color: white;
