@@ -29,34 +29,9 @@
             .then(function (response) {
                 document.getElementById('content').innerHTML = marked(response.data);//使用marked.js显示markdown
             }).catch(function (error) {
-                document.getElementById('content').innerHTML = marked("服务器出bug了...");//使用marked.js显示markdown
+                document.getElementById('content').innerHTML = marked("该博文已被删除...");
                 console.log(error);
             });
-            /*
-            switch(md){
-                case "Webxiaoxueqi":
-                    text="# 对Web前端小学期的期待\n一直以来，我都对Web开发充满了兴趣。这次能够参加刘强老师开设的Web前端小学期，我也感到非常荣幸。\n\n在这三周中，我希望能够对html、css、JavaScript形成基础的掌握，为日后进一步研究Web开发技术打下坚实基础。"
-                    break;
-                case "exp1":
-                    text="# 基础实验一完成了！\n今天，本人顺利完成了Web前端小学期的基础实验一。\n\n在这次实验中，我完成了自己的第一个个人主页，包括了首页、个人介绍、详情等页面。\n\n欢迎大家来围观！"
-                    break;
-                case "prototype_chain":
-                    text="# 深入理解JS原型链\n遗憾的是，截止目前，博主还没完全理解JS的原型链。。";
-                    break;
-                
-                case "yield":
-                    text="# JS探秘：yield表达式解析\n在基础实验二中，有一道题的要求是实现一个迭代器，可以对树进行先序遍历。\n"
-                    +"为了完成这道题，本人使用到了JavaScript的一个特性——yield表达式。在完成这道题后，本人感受到了yield表达式提供的强大而灵活的功能，"
-                    +"所以专门写了这篇技术博客来讨论yield关键字。\n"+
-                    "\n---\n\n"+
-                    "### 生成器（generator）对象和yield关键字\n一般来说，yield关键字经常和生成器对象配套使用。为此，我们先学习一下生成器对象。\n"
-                    +"首先，我们观察如下代码片段：\n"
-                    break;
-                default:
-                    text="#### 该博客内容已被删除";
-                    break;
-            }*/
-            //
         </script>
         
     </body>
