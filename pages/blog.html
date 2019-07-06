@@ -27,8 +27,9 @@
             var md = window.location.search.split("=")[1];//解析URL
             axios.get("https://jxqhhh.github.io/pages/md/"+md+".md")
             .then(function (response) {
-                console.log(response);
+                document.getElementById('content').innerHTML = marked(response.data);//使用marked.js显示markdown
             }).catch(function (error) {
+                document.getElementById('content').innerHTML = marked("服务器出bug了...");//使用marked.js显示markdown
                 console.log(error);
             });
             /*
@@ -55,7 +56,7 @@
                     text="#### 该博客内容已被删除";
                     break;
             }*/
-            //document.getElementById('content').innerHTML = marked(text);//使用marked.js显示markdown
+            //
         </script>
         
     </body>
