@@ -22,9 +22,15 @@
 
         <div id="content" style="width: 84%; margin: 8%;""></div>
         <script src="../node_modules/marked/marked.min.js"></script>
+        <script src="../node_modules/axios/dist/axios.min.js"></script>
         <script>
             var md = window.location.search.split("=")[1];//解析URL
-            var text;
+            const res = axios({
+			    method: 'get',
+			    url: "htpps://jxqhhh.github.io/pages/md/"+md+".md"
+            });
+            console.log(res.data);
+            /*
             switch(md){
                 case "Webxiaoxueqi":
                     text="# 对Web前端小学期的期待\n一直以来，我都对Web开发充满了兴趣。这次能够参加刘强老师开设的Web前端小学期，我也感到非常荣幸。\n\n在这三周中，我希望能够对html、css、JavaScript形成基础的掌握，为日后进一步研究Web开发技术打下坚实基础。"
@@ -36,11 +42,19 @@
                     text="# 深入理解JS原型链\n遗憾的是，截止目前，博主还没完全理解JS的原型链。。";
                     break;
                 
+                case "yield":
+                    text="# JS探秘：yield表达式解析\n在基础实验二中，有一道题的要求是实现一个迭代器，可以对树进行先序遍历。\n"
+                    +"为了完成这道题，本人使用到了JavaScript的一个特性——yield表达式。在完成这道题后，本人感受到了yield表达式提供的强大而灵活的功能，"
+                    +"所以专门写了这篇技术博客来讨论yield关键字。\n"+
+                    "\n---\n\n"+
+                    "### 生成器（generator）对象和yield关键字\n一般来说，yield关键字经常和生成器对象配套使用。为此，我们先学习一下生成器对象。\n"
+                    +"首先，我们观察如下代码片段：\n"
+                    break;
                 default:
                     text="#### 该博客内容已被删除";
                     break;
-            }
-            document.getElementById('content').innerHTML = marked(text);//使用marked.js显示markdown
+            }*/
+            //document.getElementById('content').innerHTML = marked(text);//使用marked.js显示markdown
         </script>
         
     </body>
