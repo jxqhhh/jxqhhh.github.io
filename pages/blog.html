@@ -25,11 +25,12 @@
         <script src="../node_modules/axios/dist/axios.min.js"></script>
         <script>
             var md = window.location.search.split("=")[1];//解析URL
-            const res = axios({
-			    method: 'get',
-			    url: "https://jxqhhh.github.io/pages/md/"+md+".md"
+            axios.get("https://jxqhhh.github.io/pages/md/"+md+".md")
+            .then(function (response) {
+                console.log(response);
+            }).catch(function (error) {
+                console.log(error);
             });
-            console.log(res.data);
             /*
             switch(md){
                 case "Webxiaoxueqi":
