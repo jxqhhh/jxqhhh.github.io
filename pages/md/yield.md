@@ -43,7 +43,7 @@ yield* 表达式用于委托给另一个generator 或可迭代对象。具体来
 
 为了更加具体地展现yield*表达式的作用，我们从以下三方面举例说明：
 
-##### 1.委托给其他生成器
+### 1.委托给其他生成器
 ```
 function* g1() {
   yield 2;
@@ -68,7 +68,7 @@ console.log(iterator.next()); // { value: undefined, done: true }
 ```
 在上述代码中，yield*委托了生成器对象g1()。
 
-##### 2. 委托给其他可迭代对象
+### 2. 委托给其他可迭代对象
 ```function* g3() {
   yield* [1, 2];
   yield* "34";
@@ -87,7 +87,7 @@ console.log(iterator.next()); // { value: undefined, done: true }
 ```
 在上述代码中，yield*依次委托了[1,2]、"34"、arguments这些可迭代对象。
 
-##### 3. yield* 表达式的值
+### 3. yield* 表达式的值
 ```
 function* g4() {
   yield* [1, 2, 3];
