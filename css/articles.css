@@ -16,8 +16,8 @@
 }
 
 #articles > div.article > img.preview {
-    min-width: 30%;
-    max-width: 30%;
+    min-width: 30%!important;
+    max-width: 30%!important;
     box-sizing: content-box;
     vertical-align: middle;
     margin-left: 4%;
