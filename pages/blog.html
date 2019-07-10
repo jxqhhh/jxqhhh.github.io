@@ -25,8 +25,8 @@
         <script src="../node_modules/axios/dist/axios.min.js"></script>
         <script>
             var md = window.location.search.split("=")[1];//解析URL
-            var hostname=window.location.host;
-            axios.get("https://"+hostname+"/pages/md/"+md+".md")
+            var host=window.location.host;
+            axios.get(host+"/pages/md/"+md+".md")
             .then(function (response) {
                 document.getElementById('content').innerHTML = marked(response.data);//使用marked.js显示markdown
             }).catch(function (error) {
